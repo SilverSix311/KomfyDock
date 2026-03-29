@@ -1,0 +1,65 @@
+# ComfyUI Custom Nodes
+# One git URL per line
+# Optional: @branch or @tag suffix (e.g., repo.git@main)
+# Lines starting with # are comments
+
+# === Essential Management ===
+https://github.com/ltdrdata/ComfyUI-Manager.git
+
+# === Impact Pack (segmentation, detectors, etc.) ===
+https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
+https://github.com/ltdrdata/ComfyUI-Impact-Subpack.git
+
+# === Video & Animation ===
+https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
+https://github.com/kijai/ComfyUI-LTXVideo.git
+https://github.com/kijai/ComfyUI-WanVideoWrapper.git
+
+# === ControlNet & Preprocessing ===
+https://github.com/Fannovel16/comfyui_controlnet_aux.git
+
+# === IPAdapter ===
+https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
+
+# === Upscaling ===
+https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git
+
+# === Segmentation ===
+https://github.com/kijai/ComfyUI-segment-anything-2.git
+
+# === GGUF Support ===
+https://github.com/city96/ComfyUI-GGUF.git
+
+# === Utility Nodes ===
+https://github.com/rgthree/rgthree-comfy.git
+https://github.com/jags111/efficiency-nodes-comfyui.git
+https://github.com/kijai/ComfyUI-KJNodes.git
+https://github.com/WASasquatch/was-node-suite-comfyui.git
+https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git
+
+# === LoRA Management ===
+https://github.com/aburahamu/comfyui-lora-manager.git
+
+# === Inpainting ===
+https://github.com/Acly/comfyui-inpaint-nodes.git
+
+# === Image Grid ===
+https://github.com/Melvinax/images-grid-comfy-plugin.git
+
+# === Detail Enhancement ===
+https://github.com/Jonseed/ComfyUI-detail-daemon.git
+
+# === Resolution Helpers ===
+https://github.com/LEv145/comfyui-find-perfect-resolution.git
+
+# === TensorOps ===
+https://github.com/un-seen/comfyui-tensorops.git
+
+# === Fill Nodes ===
+https://github.com/sipherxyz/comfyui-fill-nodes.git
+
+# === RES4LYF ===
+https://github.com/ClownsharkBatwing/RES4LYF.git
+
+# === Persona Director ===
+https://github.com/ciri/ComfyUI-Persona-Director.git

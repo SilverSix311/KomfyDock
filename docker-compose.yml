@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  comfyui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: comfyui
+    ports:
+      - "8989:8188"
+    volumes:
+      # Custom nodes list (read by entrypoint)
+      - ./custom-nodes.txt:/app/custom-nodes.txt:ro
+      
+      # Persistent volumes - your ComfyUI Library
+      - ../models:/app/ComfyUI/models
+      - ../output:/app/ComfyUI/output
+      - ../input:/app/ComfyUI/input
+      - ../custom_nodes:/app/ComfyUI/custom_nodes
+      - ../user:/app/ComfyUI/user
+      - ../workflows:/app/ComfyUI/user/default/workflows
+    
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    
+    restart: unless-stopped
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8188/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
