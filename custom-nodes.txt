@@ -43,6 +43,9 @@ https://github.com/aburahamu/comfyui-lora-manager.git
 # === Inpainting ===
 https://github.com/Acly/comfyui-inpaint-nodes.git
 
+# === Krita AI Diffusion (required) ===
+https://github.com/Acly/comfyui-tooling-nodes.git
+
 # === Image Grid ===
 https://github.com/Melvinax/images-grid-comfy-plugin.git
 
